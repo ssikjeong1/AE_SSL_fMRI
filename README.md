@@ -7,7 +7,7 @@ This repository provides the official PyTorch implementation of the following pa
 > (<sup>1</sup>Korea University) <br/>
 > [[Official version]]() <br>
 > 
-> **Abstract:** *In recent studies, deep learning methods have been shown the potential for resting-state functional magnetic resonance image (rs-fMRI) analysis and its applicability on brain disease diagnosis, e.g., autism spectrum disorder (ASD). However, it still remains challenging to learn discriminative representations from raw BOLD signals or functional connectivity (FC) with a limited number of samples. In this paper, we propose a simple but efficient representation learning method for FC in a self-supervised learning manner. Specifically, we devise a proxy task of estimating the randomly masked seed-based functional networks from the remaining ones in FC, to discover the complex high-level relations among brain regions, which are not directly observable from an input FC. Thanks to the random masking strategy in our proxy task, it also has the effect of augmenting training samples, thus allowing for robust training. With the pretrained feature representation network in a self-supervised manner, we then construct a decision network for the downstream task of ASD diagnosis. In order to validate the effectiveness of our proposed method, we used the ABIDE dataset that collected subjects from multiple sites and our proposed method showed superiority to the comparative methods in various metrics.*
+> **Abstract:** *In recent studies, we have witnessed the applicability of deep learning methods on resting-state functional magnetic resonance image (rs-fMRI) analysis and its use for brain disease diagnosis, e.g., autism spectrum disorder (ASD). However, it still remains challenging to learn discriminative representations from raw BOLD signals or functional connectivity (FC) with a limited number of samples. In this paper, we propose a simple but efficient representation learning method for FC in a self-supervised learning manner. Specifically, we devise a proxy task of estimating the randomly masked seed-based functional networks from the remaining ones in FC, to discover the complex high-level relations among brain regions, which are not directly observable from an input FC. Thanks to the random masking strategy in our proxy task, it also has the effect of augmenting training samples, thus allowing for robust training. With the pretrained feature representation network in a self-supervised manner, we then construct a decision network for the downstream task of ASD diagnosis. In order to validate the effectiveness of our proposed method, we used the ABIDE dataset that collected subjects from multiple sites and our proposed method showed superiority to the comparative methods in various metrics.*
 
 ## Dependencies
 * [Python 3.6+](https://www.continuum.io/downloads)
@@ -22,7 +22,7 @@ To download the ABIDE dataset
 ## Usage
 For training:
 
-`python main.py --dataset='Zero' --data_path=PATH --kfold=5 --impute_weigh=0.1 --reg_weight=0.5 --label_weight=0.5 --gamma=5.0 --cognitive_score=True`
+``
 
 ## Citation
 If you find this work useful for your research, please cite our [paper]():
